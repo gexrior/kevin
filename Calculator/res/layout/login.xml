@@ -1,0 +1,164 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/loginForm"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+            
+              >
+    <TableLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 >
+    <TableRow>
+       <TextView android:id="@+id/log"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="log"
+                 android:textSize="20sp"
+                 android:layout_marginTop="10dip"
+                 android:layout_marginLeft="25dip"/>
+	<TextView 	 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/x"
+                 android:text="x"
+                 android:textSize="17sp"
+                 android:layout_marginTop="10dip"
+                 android:layout_marginLeft="0dip"/>
+   	<TextView    android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/Y"
+                 android:text="Y"
+                 android:textSize="22sp"
+                 android:layout_marginTop="10dip"
+                 android:layout_marginLeft="2dip"/>
+   	</TableRow>
+       </TableLayout>
+    <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="1">
+    <TableRow>
+       <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="底数:"
+                 android:textSize="25sp"
+                 android:gravity="top"
+                 android:layout_marginTop="0dip"
+                 android:layout_marginLeft="20dip"
+     />
+              <EditText
+                 android:id="@+id/lownumber"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:background="@drawable/shape"
+                 android:phoneNumber="true"
+                 android:layout_marginLeft="20dip" 
+   				 android:layout_marginRight="20dip"
+   				 android:layout_marginTop="0dip"
+   			/>
+    </TableRow>
+   </TableLayout>
+       <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="1">
+           <TableRow>
+       <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="真数:"
+                 android:textSize="25sp"
+                 android:gravity="bottom"
+                 android:layout_marginTop="15dip"
+                 android:layout_marginLeft="20dip"
+     />
+              <EditText
+                 android:id="@+id/upnumber"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:background="@drawable/shape"
+                 android:phoneNumber="true"
+                 android:layout_marginLeft="20dip" 
+   				android:layout_marginRight="20dip"
+   				   				 android:layout_marginTop="15dip"
+   				
+     />
+    </TableRow>
+         </TableLayout>
+          <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:stretchColumns="1">
+           <TableRow>
+
+               <TextView
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="bottom"
+                   android:text="结果:"
+                   android:textSize="25sp" 
+                   android:layout_marginTop="15dip"
+                   android:layout_marginLeft="20dip"/>
+
+              <TextView
+                 android:id="@+id/result"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:background="@drawable/shape"
+                 android:layout_marginLeft="20dip" 
+   				 android:layout_marginRight="20dip" 
+   				 android:layout_marginTop="20dip"
+   				 
+     />
+    </TableRow>
+         </TableLayout>
+  
+         <TableLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+             <Button android:id="@+id/count"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="计算"
+                  android:height="50dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button1"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="20dip"
+                  android:layout_marginRight="20dip"
+                  android:layout_marginTop="10dip"
+                  android:layout_marginBottom="10dip"
+                 />
+         </TableLayout>
+      <TableLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:stretchColumns="0,1">
+          <TableRow >
+               <Button android:id="@+id/ok"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="确定"
+                  android:height="50dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button1"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="20dip"
+                  android:layout_marginRight="5dip"
+                  android:layout_marginBottom="10dip"
+                 />
+                <Button android:id="@+id/cancel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="取消"
+                  android:height="50dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button1"
+                  android:textStyle="bold"
+                  android:layout_marginRight="20dip"
+                  android:layout_marginLeft="5dip"
+                  android:layout_marginBottom="10dip"
+                 />
+          </TableRow>
+      </TableLayout>
+      </LinearLayout>

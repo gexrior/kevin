@@ -1,0 +1,316 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calculator.MainActivity" >
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+               >
+    <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/view"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/shapespecial"
+           android:cursorVisible="true"
+           android:gravity="left"
+           android:height="78dip"
+           android:scrollHorizontally="true"
+           android:text="0"
+           android:textSize="10pt"
+           android:textStyle="bold" />
+
+   </TableLayout>
+       <TableLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+       <TextView android:id="@+id/view1"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:height="78dip"
+                 android:gravity="left"
+                 android:textSize="8pt"
+                 android:textColor="@color/gray"
+                 android:scrollHorizontally="true"
+                 android:cursorVisible="true"
+                 android:background="@drawable/shapespecial"/>
+   </TableLayout>
+      <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3">
+      <TableRow>
+          <Button android:id="@+id/C"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="C"
+                  android:height="30dip"
+                  android:textColor="#FF3200"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/delete"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="d"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/divided"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="/"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/times"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="*"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+      </TableRow>
+    </TableLayout>
+    <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3">
+      <TableRow>
+          <Button android:id="@+id/seven"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="7"
+                  android:gravity="center"
+                  android:height="30dip"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/eight"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="8"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/nine"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="9"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/minus"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="-"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+      </TableRow>
+    </TableLayout>
+        <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3">
+      <TableRow>
+          <Button android:id="@+id/four"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="4"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/five"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="5"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/six"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="6"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/plus"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="+"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+      </TableRow>
+    </TableLayout>
+            <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3"
+                    >
+      <TableRow>
+          <Button android:id="@+id/one"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="1"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/two"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2"
+                android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/three"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="3"
+                 android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/power"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="^"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+         </TableRow>
+    </TableLayout>
+                <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3"
+                 >
+     <TableRow>
+          <Button android:id="@+id/leftbracket"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+               android:height="30dip"
+                  android:text="("
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/zero"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="0"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/rightbracket"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text=")"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/point"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="."
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+         </TableRow>
+    </TableLayout>
+           <TableLayout  android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:stretchColumns="0,1,2,3">
+      <TableRow>
+                <Button android:id="@+id/lg"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="lg"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/ln"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="ln"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/Pi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Pi"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+      <Button android:id="@+id/log"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="logxy"
+                  android:textSize="8.15pt"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"
+                    android:layout_marginTop="0dip"
+                   android:layout_marginRight="0dip"/>
+    </TableRow>
+    </TableLayout>
+      <TableLayout  android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0,1,2,3">
+      <TableRow>
+          <Button android:id="@+id/sin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="sin"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/cos"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:height="30dip"
+                  android:text="cos"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/tan"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="tan"
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button"
+                  android:textStyle="bold"/>
+          <Button android:id="@+id/equal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="="
+                  android:height="30dip"
+                  android:gravity="center"
+                  android:background="@drawable/login_button1"
+                  android:textStyle="bold"/>
+
+      </TableRow>
+    </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>
